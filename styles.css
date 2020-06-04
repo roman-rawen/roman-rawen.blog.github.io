@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+p {
+	line-height: 1.5;
+}
+body {
+	color: #555;
+	margin: 0;
+	/* prisune nahoru - get rid of the space */
+	font-family: 'Montserrat', sans-serif;
+}
+a {
+	color: #1abc9c;
+	text-decoration: none;
+}
+a:hover {
+	color: #f6a623;
+}
+h1, h2, h3, h4 {
+	color: #333;
+}
+
+#header {
+	background-color: #1abc9c;
+	height: 150px;
+	line-height: 150px;
+}
+#header a {
+	/* rule for link <a> in header section */
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+#header a:hover {
+	color: #222;
+}
+#header-title {
+	display: block;
+	float: left;
+	/* clicable title on the left side (My Blog) */
+	font-size: 20px;
+	font-weight: bold;
+}
+#header-nav {
+	display: block;
+	float: right;
+	/* navigation bar on the right side (About, Contact) */
+	margin-top: 0;
+	/* get rid of the space */
+}
+#header-nav li {
+	/* rule for list <li> in header section */
+	display: inline;
+	/* list items in a line
+	list items next each other, not under each other */
+	padding-left: 20px;
+	/* space between li items */
+}
+
+#footer {
+	background-color: #2f2f2f;
+	padding: 50px 0;
+	/* footer has no fixed height */
+}
+#footer h4 {
+	/* rule for <h4> in footer section */
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+#footer p {
+	/* rule for <p> in footer section */
+	color: white;
+}
+
+.post-container:nth-child(even) {
+	background-color: lightGray;
+}
+.about {
+	text-align:center;
+	/* text on page about.html is centered */
+	/* bronze chalenge */
+}
+.post, .about {
+	max-width: 800px;
+	margin: 0 auto;
+	/* container 1000px, post 800px */
+	padding: 60px 0;
+	/* some space on top and bottom */
+}
+.post-author img {
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	/* border-radius:25px; */
+  /* moje reseni podle velikosti obrazku	*/
+	border-radius: 50%;
+	/* reseni, ktere osetruje i zmenu velikosti obrazku */
+	/* silver chalenge */
+}
+.post-author span {
+	margin-left: 16px;
+}
+.post-date {
+	color: #D2D2D2;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	/* nastaví šířku a 
+	margin auto = "vycentruje" */
+}
+.column {
+	min-width: 300px;
+	display: inline-block;
+	/* block lines up in a row, not in one line*/
+	vertical-align: top;
+	/* repair line before */
+}
